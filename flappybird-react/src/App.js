@@ -30,7 +30,8 @@ function App() {
       alert("Game Over!");
     }, 100);
   }, []);
-
+  console.log('obstacles', obstacles);
+  
   useCollision(birdLeft, birdBottom, obstacles, handleGameOver);
 
   return (

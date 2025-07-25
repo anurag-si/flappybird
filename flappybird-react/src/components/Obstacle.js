@@ -1,6 +1,7 @@
 import React from "react";
 
 const Obstacle = ({ left, bottom, isTop }) => {
+  
   return (
     <div
       className={isTop ? "topObstacle" : "obstacle"}

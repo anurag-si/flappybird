@@ -6,6 +6,7 @@ export default function useCollision(birdLeft, birdBottom, obstacles, onGameOver
     if (detectCollision(birdLeft, birdBottom, obstacles)) {
       onGameOver();
     }
+    
     // eslint-disable-next-line
   }, [birdLeft, birdBottom, obstacles, onGameOver]);
 } 

@@ -5,6 +5,7 @@ export default function useBird(isGameOver) {
   const [birdBottom, setBirdBottom] = useState(BIRD_START_BOTTOM);
 
   // Gravity
+  console.log('birdBottom', birdBottom);
   useEffect(() => {
     if (!isGameOver) {
       const timer = setInterval(() => {
@@ -13,6 +14,7 @@ export default function useBird(isGameOver) {
       return () => clearInterval(timer);
     }
   }, [isGameOver]);
+
 
   // Jump
   useEffect(() => {

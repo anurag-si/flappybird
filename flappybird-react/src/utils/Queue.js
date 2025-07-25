@@ -1,5 +1,3 @@
-// Queue.js
-// Generic Queue data structure for managing obstacles (FIFO)
 export default class Queue {
   constructor() {
     this.items = [];

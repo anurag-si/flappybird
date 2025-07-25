@@ -4,7 +4,6 @@ import { generateObstacle } from "../utils/gameHelpers";
 import Queue from "../utils/Queue";
 
 export default function useObstacles(isGameOver) {
-  // Use a Queue to manage obstacles (FIFO)
   const queueRef = useRef(new Queue());
   const [obstacles, setObstacles] = useState([]);
   const obstacleId = useRef(0);
@@ -25,9 +24,7 @@ export default function useObstacles(isGameOver) {
   useEffect(() => {
     if (isGameOver) return;
     const timer = setInterval(() => {
-      // Move all obstacles
       const moved = queueRef.current.toArray().map((ob) => ({ ...ob, left: ob.left - 2 }));
-      // Remove obstacles that are out of bounds (left < -OBSTACLE_WIDTH)
       while (moved.length && moved[0].left <= -OBSTACLE_WIDTH) {
         queueRef.current.dequeue();
         moved.shift();

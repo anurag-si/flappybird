@@ -1,4 +1,3 @@
-// GameConstants.js
 export const GAME_WIDTH = 500;
 export const GAME_HEIGHT = 730;
 export const BIRD_START_LEFT = 220;
