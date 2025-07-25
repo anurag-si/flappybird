@@ -8,6 +8,7 @@ const reportWebVitals = onPerfEntry => {
       getTTFB(onPerfEntry);
     });
   }
+  console.log('reportWebVitals');
 };
 
 export default reportWebVitals;
