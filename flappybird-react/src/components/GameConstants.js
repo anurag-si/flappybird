@@ -1,0 +1,11 @@
+// GameConstants.js
+export const GAME_WIDTH = 500;
+export const GAME_HEIGHT = 730;
+export const BIRD_START_LEFT = 220;
+export const BIRD_START_BOTTOM = 100;
+export const GRAVITY = 3;
+export const JUMP_HEIGHT = 50;
+export const OBSTACLE_GAP = 430;
+export const OBSTACLE_WIDTH = 60;
+export const OBSTACLE_HEIGHT = 300;
+export const OBSTACLE_INTERVAL = 3000; 
